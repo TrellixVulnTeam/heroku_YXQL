@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221,230,255, 0.4);
+    height: 100vh;
+    border-radius: 0 15px 15px 0;
+}
+
+#background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#wallpaper{
+    width: 80%;
+}
+
+#logo{
+    margin-bottom: 50px;
+    margin-top: 0px;
+    max-width: 150px;
+}
+
+#label{
+    align-self: flex-end;
+    margin-right: 15%;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#title{
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.container-inputs{
+    margin-bottom: 5px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputs{
+    border-radius: 15px;
+    width: 80%;
+    height: 50px;
+    padding-left: 30px;
+    border: solid 2px white;
+}
+
+.inputs:hover, .inputs:focus-visible{
+    border-color: rgb(52,104,252);
+    outline: none;
+}
+
+.sub-title{
+    width: 80%;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+button:focus{
+    border: none;
+}
+
+#join{
+    margin-top: 30px;
+    width: 25%;
+    background-color: white;
+    color: rgb(52,104,252);
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+}
+
+#join:hover{
+    background-color: rgb(52,104,252);
+    color: white;
+
+}
+
+#forgot-password{
+    color: rgb(52,104,252);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#forgot-password:hover{
+    color: black;
+}

@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "sqlite3": "^5.0.8"
+  },
+  "name": "heroku",
+  "description": "teste testando 123",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yRoMao/heroku.git"
+  },
+  "author": "Pedro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yRoMao/heroku/issues"
+  },
+  "homepage": "https://github.com/yRoMao/heroku#readme"
+}

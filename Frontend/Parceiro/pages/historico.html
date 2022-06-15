@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <!-- Detalhes de configuração inicial -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilo do site-->
+    <link rel="stylesheet" href="../css/historico.css" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Hurb | Histórico</title>  <!-- Título da página -->
+  </head>
+  <body> 
+    <!-- Cabeçalho com logo e menu -->
+    <div id="header"> 
+      <a href="./dashboard"><img id="logo" src="../assets/logo.png" alt="logo" /></a>
+      <img id="menu" src="../assets/menu.png" alt="menu" /><!-- imagem do menu -->
+
+      <h1 id="title">Histórico</h1>
+    </div> 
+    <!-- Background azul -->
+    <main id="container">
+      <!-- Background branco -->
+      <div id="wtContainer">
+        <!-- Coluna de Antecipações passadas -->
+        <div id="previousAnticipatios">
+          <p class="subtitle">Antecipações Anteriores</p>
+          <div id="anticipatiosColumns">
+            <div class="columTitles">
+              <p class="columTitle">Data</p>
+
+              <p class="columTitle">Status</p>
+
+              <a href="../pages/financeiro.html" 200ms class="columTitle">Valor</a>
+            </div>
+            <div class="scrollContainer">
+              <!-- Elementos de texto -->
+              <div class="anticipatiosColumn">
+                <p class="columElements">XX/XX/XXXX</p>
+                <p class="columElements">XX/XX/XXXX</p>
+                <p class="columElements">XX/XX/XXXX</p>
+                <p class="columElements">XX/XX/XXXX</p>
+                <p class="columElements">XX/XX/XXXX</p>
+                <p class="columElements">XX/XX/XXXX</p>
+                <p class="columElements">XX/XX/XXXX</p>
+              </div>
+              <div class="anticipatiosColumn">
+                <p class="columElements">XXXX</p>
+                <p class="columElements">XXXX</p>
+                <p class="columElements">XXXX</p>
+                <p class="columElements">XXXX</p>
+                <p class="columElements">XXXX</p>
+                <p class="columElements">XXXX</p>
+                <p class="columElements">XXXX</p>
+              </div>
+              <div class="anticipatiosColumn">
+                <p class="columElements">R$XXXX,XX</p>
+                <p class="columElements">R$XXXX,XX</p>
+                <p class="columElements">R$XXXX,XX</p>
+                <p class="columElements">R$XXXX,XX</p>
+                <p class="columElements">R$XXXX,XX</p>
+                <p class="columElements">R$XXXX,XX</p>
+                <p class="columElements">R$XXXX,XX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pastProjections">
+          <!-- Coluna de projeções passadas -->
+          <p class="subtitle">Projeções Passadas</p>
+            <!-- Gráfico -->
+          <div class="graphContainer">
+            <div class="grafico">    
+              <section class="bar">
+                   <canvas style="height: 300px; width: 450px;" class="bar-chart"></canvas> 
+              </section>
+          </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+             <script>                                
+                 var boy = document.getElementsByClassName('bar-chart');
+                 var barGraph = new Chart(boy, {
+                     type: 'bar',
+                     data: {
+                         labels: ['Jan', 'Fev'],
+                         datasets: [{
+                             label: 'Gráfico de Antecipações em R$',
+                             data: [9000, 2700],
+                             backgroundColor: [
+                                 'rgb(52, 104, 252)',
+                                 'rgb(52, 104, 252)',
+                         ],
+                         barThickness: 125,
+                         borderRadius: 12
+                     }]
+                     },
+                     options: {
+                         maintainAspectRatio: false,
+                         scales: {
+                         x: {
+                             grid: {
+                             display: false
+                             }
+                         },
+                         y: {
+                             grid: {
+                             display: false
+                             }
+                         }
+                         }
+                     }
+                 });
+             </script> 
+     </div>
+     
+ </div>
+</div>
+</div>
+          <!-- Configuração do gráfico -->
+          <script>
+          var modal = document.getElementById("myModal");
+          var btn = document.getElementById("myBtn");
+          var span = document.getElementsByClassName("close")[0];
+          btn.onclick = function() {
+          modal.style.display = "block";
+          }
+          span.onclick = function() {
+          modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+          }
+          </script>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html> 
